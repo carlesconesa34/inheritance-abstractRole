@@ -1,8 +1,5 @@
 /**
  * 
  */
-/**
- * 
- */
 module inheritance_abstractRole {
 }

@@ -7,20 +7,34 @@
  * This is free software, licensed under the GNU General Public License v3.
  * See http://www.gnu.org/licenses/gpl.html for more information.
  */
- 
-/**
- * 
- */
 
-package role; //Package declaration.
+package role;
 
-/**
- * 
- */
+public class Ninja extends Role {
 
-public class Ninja {
-	public static void main(String args[]) {
+    public Ninja(float posX, float posY) {
+        super(posX, posY);
+    }
 
-	}
+    @Override
+    public void move() {
+        if (isAvailable() && getEnergy() >= Utils.ENERGY_MOVE) {
+            setPosX(getPosX() + Utils.NINJA_MOVE);
+            setEnergy(getEnergy() - Utils.ENERGY_MOVE);
+        }
+    }
+
+    @Override
+    public void jump() {
+        if (isAvailable() && getEnergy() >= Utils.ENERGY_JUMP) {
+            setPosY(getPosY() + Utils.NINJA_JUMP);
+            setEnergy(getEnergy() - Utils.ENERGY_JUMP);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Ninja -> " + super.toString();
+    }
 }
 

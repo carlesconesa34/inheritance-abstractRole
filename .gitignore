@@ -1,5 +1,6 @@
 # Compiled class file
 *.class
+*.classpath
 
 # Log file
 *.log
@@ -26,3 +27,6 @@ replay_pid*
 #.vscode
 .vscode/*
 /bin/
+
+#project files
+*.project

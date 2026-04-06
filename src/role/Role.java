@@ -242,8 +242,8 @@ public abstract class Role {
 		if (available && lifes < 3) {
 			lifes++;
 			return true;
-		} else {
-			return false;
 		}
+
+		return false;
 	}
 }

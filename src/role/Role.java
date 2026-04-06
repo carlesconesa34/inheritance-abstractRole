@@ -184,7 +184,7 @@ public abstract class Role {
      * Y axis and consuming 4 energy points.
      *
      * This action is only executed when the role is available and has at
-     * least 4 energy points remaining.</p>
+     * least 4 energy points remaining.
      */
 	public final void extraJump() {
 		if(available && energy >= 4.0f){
@@ -197,7 +197,7 @@ public abstract class Role {
      * Resets the role's position to the origin.
      *
      * This method does not alter any other state such as lives, energy or
-     * availability.</p>
+     * availability.
      */
 	public final void resetPosition() {
 		posX = 0.0f;

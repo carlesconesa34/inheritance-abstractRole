@@ -232,9 +232,9 @@ public abstract class Role {
         if (available && lifes >= 1) {
             lifes--;
             return true;
-        } else {
-            return false;
         }
+
+        return  false;
     }
 
     /**
